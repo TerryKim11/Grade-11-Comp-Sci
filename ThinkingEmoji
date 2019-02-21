@@ -1,0 +1,49 @@
+'''
+Instructions:
+1) Review and run the 0_2_drawing_primitives.py file and investigate how the different shapes, text, and images
+are drawn to the screen.
+
+2) In this file, try to use the different arcade commands to draw your favourite emoji.  You should explore
+* drawing filled shapes
+* drawing shape outlines
+* drawing text
+'''
+
+
+import arcade
+import os
+
+# change the window dimensions if you need to
+arcade.open_window(600, 600, "My Emoji Attempt")
+
+
+arcade.set_background_color(arcade.color.WHITE)
+
+
+arcade.start_render()
+arcade.draw_circle_filled(300, 300, 200, arcade.color.YELLOW)
+arcade.draw_circle_outline(300, 300, 202, arcade.color.BLACK, 5)
+
+arcade.draw_ellipse_filled(215, 120, 17, 50, arcade.color.YELLOW_ORANGE, 180)
+arcade.draw_ellipse_outline(215, 120, 18, 51, arcade.color.BLACK, 180)
+arcade.draw_ellipse_filled(250, 60, 51, 17, arcade.color.YELLOW_ORANGE)
+arcade.draw_ellipse_outline(250, 60, 51, 17, arcade.color.BLACK, 6)
+arcade.draw_ellipse_filled(250, 80, 51, 17, arcade.color.YELLOW_ORANGE)
+arcade.draw_ellipse_outline(250, 80, 51, 17, arcade.color.BLACK, 6)
+arcade.draw_ellipse_filled(250, 100, 51, 17, arcade.color.YELLOW_ORANGE)
+arcade.draw_ellipse_outline(250, 100, 51, 17, arcade.color.BLACK, 6)
+arcade.draw_ellipse_filled(290, 120, 91, 17, arcade.color.YELLOW_ORANGE)
+arcade.draw_ellipse_outline(290, 120, 91, 17, arcade.color.BLACK, 6)
+
+arcade.draw_circle_filled(220, 350, 10, arcade.color.BLACK)
+arcade.draw_circle_filled(380, 350, 10, arcade.color.BLACK)
+arcade.draw_arc_outline(300, 200, 100, 20, arcade.color.BLACK, 0, 180, 6)
+
+arcade.draw_rectangle_filled(225, 380, 40, 6, arcade.color.BLACK, -20)
+arcade.draw_arc_outline(380, 380, 20, 6, arcade.color.BLACK, 0, 180, 6)
+# place all your drawing commands in between the start_render() and finish_render() commands
+
+arcade.finish_render()
+
+
+arcade.run()
