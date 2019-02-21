@@ -35,12 +35,12 @@ arcade.draw_ellipse_outline(250, 100, 51, 17, arcade.color.BLACK, 6)
 arcade.draw_ellipse_filled(290, 120, 91, 17, arcade.color.YELLOW_ORANGE)
 arcade.draw_ellipse_outline(290, 120, 91, 17, arcade.color.BLACK, 6)
 
-arcade.draw_circle_filled(220, 350, 10, arcade.color.BLACK)
-arcade.draw_circle_filled(380, 350, 10, arcade.color.BLACK)
-arcade.draw_arc_outline(300, 200, 100, 20, arcade.color.BLACK, 0, 180, 6)
+arcade.draw_circle_filled(230, 350, 10, arcade.color.BLACK)
+arcade.draw_circle_filled(370, 350, 10, arcade.color.BLACK)
+arcade.draw_arc_outline(300, 220, 100, 20, arcade.color.BLACK, 0, 180, 6)
 
-arcade.draw_rectangle_filled(225, 380, 40, 6, arcade.color.BLACK, -20)
-arcade.draw_arc_outline(380, 380, 20, 6, arcade.color.BLACK, 0, 180, 6)
+arcade.draw_rectangle_filled(235, 380, 40, 6, arcade.color.BLACK, -20)
+arcade.draw_arc_outline(370, 380, 20, 6, arcade.color.BLACK, 0, 180, 6)
 # place all your drawing commands in between the start_render() and finish_render() commands
 
 arcade.finish_render()
