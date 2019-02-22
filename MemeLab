@@ -1,0 +1,52 @@
+
+import arcade
+import os
+
+'''
+Step 1: Download a blank meme image of your choice (keep it appropriate).  In pycharm create a directory, call it 'images',
+in your project folder.  Copy and paste your meme image file into the images directory
+'''
+
+'''
+Step 2: create a variable for each line of text of your meme,  assign text to the variables
+'''
+text1 = "Using photoshop to make memes"
+text2 = "Using pycharm to make memes"
+
+'''
+Step 3: define a height and width variable and set them to the height and width of your meme image
+
+'''
+height = 600
+width = 600
+
+'''
+Step 4: change the open_window command to use your height and width variables for the dimensions of the window
+'''
+arcade.open_window(height, width, "Meme Generator")
+
+
+arcade.start_render()
+
+'''
+Step 5:
+Investigate the usage of the  arcade.load_texture command in the 0_2_drawing_primitives.py program.
+Use the arcade.load_texture to set a texture variable to the image file of your meme.
+'''
+texture = arcade.load_texture("images/2ouees.jpg")
+
+'''
+Step 6: investigate and use the arcade.draw_texture_rectangle command to place your image in the center of the window
+'''
+arcade.draw_texture_rectangle(300, 300, 700, 620, texture, 0)
+
+'''
+Step 7: Investigate the usage of the arcade.draw_text command and make the necessary calls to draw the lines of text
+of your meme in the appropriate position 
+'''
+arcade.draw_text(text1,320,480,arcade.color.BLACK,12)
+arcade.draw_text(text2,320,170,arcade.color.BLACK,12)
+
+arcade.finish_render()
+
+arcade.run()
